@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 206, 206);
+}
+header{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 25px 80px;
+    position: relative;
+    background-color: #292929;
+    color: white;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.logo p{
+    display: block;
+    width: 200px ;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    float: right;
+    width: 90vw;
+}
+nav ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    padding: 15px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+nav ul li button{
+    margin-right: 0;
+    margin-left: auto;
+}
+.nav-btn{
+    margin-left: auto;
+    margin-right: 0;
+}
+nav ul button{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: #8525cf;
+    border: none;
+    border-radius: 5px;
+}
+nav ul button:hover{
+    background-color: #521780;
+} 
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    display: none;
+}
+.toggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    float: left;
+    margin-bottom: 8px;
+    transition: 0.8ms;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 5rem;
+    padding-right: 5.5rem;
+    padding-bottom: 2rem;
+    /* background-color: #949494; */
+}
+.list{
+    color: black;
+    margin-top: 1.8rem;
+}
+.list h2{
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+.list ul{
+    margin-top: 15px;
+}
+.list ul li{
+    padding: 3px;
+    list-style: none;
+}
+.list ul li a{
+    text-decoration: none;
+    color: #5c5a5a;
+}
+.tag-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+footer{
+    background-color: #292929;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    color: #ffffff;
+}
+
+@media (max-width:993px){
+    .toggle-btn{
+        display: block;
+    }
+    header{
+        display: block;
+    }
+    nav{
+        display: none;
+        width: 100%;
+        border-top: 1px solid #000;
+        margin-top: 30px;
+        padding-top: 20px;
+    }
+    nav ul{
+        display: block;
+    }
+    nav ul li{
+        padding: 15px 0px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    nav.show{
+        display: block;
+    }
+    .tag-btn{
+        grid-template-columns: 1fr 1fr;
+    }
+    .container{
+        padding-left: 4rem;
+        padding-right: 4.5rem;
+    }
+}
+
+@media (max-width:910px){
+    .container{
+        padding-left: 3rem;
+        padding-right: 3.5rem;
+    }
+}
+@media (max-width:550px) {
+    .logo{
+        width: 180px;
+        padding-right: 5px;
+        float: left;
+    }
+    .tag-btn{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        padding-left: 2rem;
+        padding-right: 2.5rem;
+    }
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.hr{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.hr hr{
+    
+    height: 2px;
+    background-color: rgb(120, 120, 120);
+}
+.main{
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.main p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+#con-test{
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 35px;
+}
+.con-test-in{
+    display: grid;
+    background-color: rgb(237, 239, 241);
+    height: 8cm;
+    width: 100%;
+    padding: 25px;
+    margin-top: 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(180, 180, 180, 0.5);
+    line-height: 2rem;
+}
+.con-test-in img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    height: 10rem;
+}
+@media (max-width:1100px){
+    #con-test{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:720px){
+    #con-test{
+        grid-template-columns: 1fr;
+    }
+    .con-test-in p{
+        font-size: 14px;
+    }
+}
