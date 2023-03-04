@@ -5,25 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Analyzer</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Traffic Visualizer</title>
+    <link rel="stylesheet" href="nstyle.css">
+    <script>
+        function Dropfunction(){
+        var navbar=document.getElementById('nav');
+        navbar.classList.toggle('show');
+    }
+    </script>
 </head>
-<body>
+<body>  
     <header>
-        <nav>
+        <div class="toggle-btn" onclick="Dropfunction();">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+           <a href="index.html"><p>Traffic<br> &ensp; Visualizer</p></a>
+        </div>
+        <nav id="nav">
             <ul>
-                <li><a href="#">Visualizer</a></li>    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
-        <div class="main1">
-            <h3>Location: NH01 Junction Signal</h3>
-            <h4>Traffic status: </h4>
-            <h4>Vehicle count for the last minute: <a id="p1"></a></h4>
+        <div class="main">
+            <p>Traffic status</p>
+            <div class="hr"><hr></div>
+        </div> 
+        <div id="con-test">
+            <div class="con-test-in">
+                <img src="ss.jpeg">
+                <p>Location - NH01 Junction Signal</p>
+                <p>Vehicle count for the last minute: <strong><a id="p1"></a></strong></p>
+            </div> 
+            <div class="con-test-in">
+                <img src="cs.png">
+                <p>Location - Coming Soon</p>
+                <p>Vehicle count for the last minute: <strong><a id="p2"></a></strong></p>
+            </div>
+            <div class="con-test-in">
+                <img src="cs.png">
+                <p>Location - Coming Soon</p>
+                <p>Vehicle count for the last minute: <strong><a id="p2"></a></strong></p>
+            </div>
         </div>
     </div>
-    <!--need to place footer also color scheme should get changed-->
+    <footer>
+        <p>&copy; 2023 Crafted with ❤️ by <a href="https://github.com/0xcryptolub"><strong style="color: rgb(196, 227, 19);">HKK</strong></a>
+           & <a href="https://github.com/foolcardssk"><strong style="color: rgb(196, 227, 19);">SSK</strong></a></p>
+    </footer>
 </body>
 </html>
